@@ -39,8 +39,12 @@ def colocarCaballo(tablero, fila, columna):
 #COSTE DE UN CAMINO:
 #
 
-#def coste():
-
+def coste(tablero):
+    c = 0
+    for i in tablero:
+            if (tablero[i] == 1): #CASILLAS CON 1 = CASILLAS ATACADAS
+                c += 1
+    return c
 
 def main():
 
